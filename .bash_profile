@@ -5,7 +5,7 @@
 #
 
 # Custom prompt
-export PS1="\e[1;30m\u\e[m@\e[1;30m\h\e[m:\e[0;2m\w\e[m\$ "
+export PS1="\[\e[1;30m\]\u\[\e[m\]@\[\e[1;30m\]\h\[\e[m\]:\[\e[0;2m\]\w\[\e[m\]\$ "
 
 # Use colors
 export CLICOLOR=1
