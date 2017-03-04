@@ -123,8 +123,10 @@ set number
 set notimeout ttimeout ttimeoutlen=200
  
 " Use <F11> to toggle between 'paste' and 'nopaste'
-set pastetoggle=<F11>
- 
+set pastetoggle=<F2>
+
+" Show visual feedback in the status line
+set showmode
  
 "------------------------------------------------------------
 " Indentation options {{{1
@@ -133,15 +135,14 @@ set pastetoggle=<F11>
  
 " Indentation settings for using 4 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
-set shiftwidth=4
-set softtabstop=4
-set expandtab
+"set shiftwidth=4
+"set softtabstop=4
+"set expandtab
  
 " Indentation settings for using hard tabs for indent. Display tabs as
 " four characters wide.
-"set shiftwidth=4
-"set tabstop=4
- 
+set shiftwidth=2
+set tabstop=2
  
 "------------------------------------------------------------
 " Mappings {{{1
@@ -155,5 +156,8 @@ map Y y$
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
- 
+
+" Map <F2> to show visual feedback when toggling the paste option 
+nnoremap <F2> :set invpaste paste?<CR>
+
 "------------------------------------------------------------
