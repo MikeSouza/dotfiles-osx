@@ -29,6 +29,9 @@ alias gcam='git commit -am'
 alias gitl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 
+# NPM Aliases
+alias npmlg='npm list -g --depth=0'
+
 # MacVim aliases to over built-in vi/vim
 if type mvim &> /dev/null; then
   alias vi='mvim -v'
