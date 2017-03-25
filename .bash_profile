@@ -29,6 +29,10 @@ function set_prompt() {
 }
 set_prompt
 
+# Set unlimited Bash history
+export HISTSIZE=
+export HISTFILESIZE=
+
 # Use CLI colors and set LS command colors
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
