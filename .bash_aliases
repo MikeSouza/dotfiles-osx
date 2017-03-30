@@ -5,8 +5,13 @@
 #
 
 # ls aliases
-alias la='ls -a'
-alias lla='ls -la'
+if type gls &> /dev/null; then
+	alias ls='gls --group-directories-first'
+else
+	alias ls='ls -FGh'
+  alias la='ls -a'
+  alias lla='ls -la'
+fi
 
 # Reload bash user profile
 alias reload='source $HOME/.bash_profile'
