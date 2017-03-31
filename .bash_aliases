@@ -6,12 +6,12 @@
 
 # ls aliases
 if type gls &> /dev/null; then
-	alias ls='gls --group-directories-first'
+	alias ls='gls -FGh --group-directories-first --color=always'
 else
 	alias ls='ls -FGh'
-  alias la='ls -a'
-  alias lla='ls -la'
 fi
+alias la='ls -a'
+alias lla='ls -la'
 
 # Reload bash user profile
 alias reload='source $HOME/.bash_profile'
