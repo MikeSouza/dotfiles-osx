@@ -1,8 +1,18 @@
+# This file controls the behavior of line input editing for
+# programs that use the GNU Readline library.  Existing
+# programs include FTP, Bash, and GDB.
 #
-# .inputrc
+# You can Re-read the inputrc file with C-x C-r.
+
 #
-# @author Michael Souza
+# Bind CTRL+Arrow keys
 #
+"\e[1;5D": backward-word
+"\e[1;5C": forward-word
+
+# Bind SHIFT+Arrow keys
+"\e[1;2D": beginning-of-line
+"\e[1;2C": end-of-line
 
 # Allow up/down autocompletion of commands from bash history.
 # From: coderwall.com/p/oqtj8w
